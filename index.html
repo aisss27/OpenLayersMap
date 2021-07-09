@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta charset="utf-8">
+  <title>Map with Layers</title>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="info" class="ol-info">
+    <div class="navbar">
+    <h1>
+      LAYERS
+      <ul id="baseLayers-list"></ul>
+      <ul id="vectorLayers-list"></ul>
+
+      <form id="options-form" autocomplete="off">
+
+        <div class="form-group">
+          <label for="draw-type">Draw type &nbsp;</label>
+          <select name="draw-type" id="draw-type">
+            <option value="Point">Point</option>
+            <option value="LineString">LineString</option>
+            <option value="Polygon">Polygon</option>
+            <option value="Circle">Circle</option>
+          </select>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interaction" value="draw" id="draw">
+            Draw &nbsp;
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="interaction" value="modify">
+            Modify &nbsp;
+          </label>
+        </div>
+        <form class="form-inline">
+          <select id="type" class="form-control">
+            <option value="singleclick">Single-click</option>
+           </select>
+        </form>
+      </div>
+      
+  <script type src="./index.js"></script>
+
+</body>
+</html>
